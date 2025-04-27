@@ -31,7 +31,7 @@ git clone https://github.com/your-username/TraceRouteX.git
 cd TraceRouteX
 
 # Make the script executable
-chmod +x traceroutex.sh
+chmod +x main.sh
 ```
 
 ---
