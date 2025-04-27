@@ -12,66 +12,135 @@ TraceRouteX is a lightweight and powerful terminal-based IP and Phone number tra
 
 - 🌐 IP Address Information Lookup (Country, City, Region, ISP, etc.)
 - 📞 Phone Number Information Lookup (Country, Location, Carrier, Line Type)
-- 🗺️ Generates Google Maps Link for Location
-- 📜 Keeps running until user exits manually
-- ⚡ Auto-installs missing dependencies (`curl`, `jq`)
-- 🛡️ Fast, Free APIs used
+- 🗘️ Generates Google Maps Link for Easy Location
+- 📜 Keeps running until user types `exit`
+- ⚡️ Auto-installs missing dependencies (`curl`, `jq`)
+- 🛡️ Uses Free, Fast APIs (no paid subscription needed)
 - 🎨 Beautiful CLI Banner and Colored Output
-- 📂 Designed for Kali Linux, Parrot OS, Ubuntu, Arch, Fedora, etc.
+- 💻 Designed for Kali Linux, Parrot OS, Ubuntu, Arch, Fedora, etc.
 
 ---
 
-## 🛠 Installation
+## 🛠️ Installation
 
 ```bash
+# Clone the repository
 git clone https://github.com/your-username/TraceRouteX.git
+
+# Enter the directory
 cd TraceRouteX
-chmod +x main.sh
-./main.sh
 
+# Make the script executable
+chmod +x traceroutex.sh
+```
 
+---
 
-##📥 Requirements
-TraceRouteX will automatically install the following if missing:
+## 📥 Requirements
 
-curl
+TraceRouteX will automatically install these if missing:
 
-jq
+- `curl` — for making API requests
+- `jq` — for parsing JSON data
 
-Make sure you have sudo access to install packages.
+**Additionally:**  
+For Phone Number tracing, you will need a **free API key** from [Numverify](https://numverify.com/).
 
-##🔑 API Key (Phone Number Lookup)
-TraceRouteX uses Numverify for phone number validation.
+### How to Get a Free Numverify API Key:
 
-Go to https://numverify.com/, create a free account.
+1. Go to [https://numverify.com/](https://numverify.com/).
+2. Sign up for a free account.
+3. Verify your email.
+4. Get your free API Access Key from your dashboard.
 
-Get your API Access Key (free tier).
+Then:
 
-Edit the script:
+- Open the script:
 
-bash
-Copy
-Edit
-nano traceroutex.sh
-Find the line:
+  ```bash
+  nano traceroutex.sh
+  ```
 
-bash
-Copy
-Edit
-ACCESS_KEY="YOUR_ACCESS_KEY"
-Replace "YOUR_ACCESS_KEY" with your actual key.
+- Find the line:
 
-Save and close.
+  ```bash
+  ACCESS_KEY="YOUR_ACCESS_KEY"
+  ```
 
-#⚡ Usage
-bash
-Copy
-Edit
+- Replace `YOUR_ACCESS_KEY` with your actual key, like:
+
+  ```bash
+  ACCESS_KEY="your_real_api_key_here"
+  ```
+
+- Save and exit (`CTRL+O`, `ENTER`, `CTRL+X`).
+
+👉 Now you are ready to use phone number tracing!
+
+---
+
+## ⚡ Usage
+
+```bash
+# Run the script
 ./traceroutex.sh
-Then select:
+```
+
+You will see a menu:
+
+```bash
+  _______                  ______              __      _  __
+ /_  __/______  _________  /_  __/___  ____     / /____ | |/ /
+  / / / ___/ _ \/ ___/ _ \  / / / __ \/ __ \   / __/ _ \|   /
+ / / / /  /  __/ /__/  __/ / / / /_/ / /_/ /  / /_/  __/   |  
+/_/ /_/   \___/\___/\___/ /_/  \____/\____/   \__/\___/_/|_|  
+                                                              
+             TraceRouteX - IP & Phone Tracker
+====================================================================
+
+[1] Track a Custom IP
+[2] Trace a Phone Number
+[3] Exit
+```
+
+- `[1]` Track any IP address worldwide.
+- `[2]` Trace any phone number (e.g., `+14151234567`).
+- `[3]` Exit the tool safely.
+
+---
 
 
-Option	Description
-[1]	Track a Custom IP Address
-[2]	Trace a Phone Number
-[3]	Exit Tool
+
+## 💻 Tested On
+
+- ✅ Kali Linux 2024
+- ✅ Parrot OS
+- ✅ Ubuntu 22.04 LTS
+- ✅ Fedora 38
+- ✅ Arch Linux
+- ✅ Debian 12
+
+---
+
+## ⚠️ Disclaimer
+
+This tool is intended **for educational purposes only**.  
+Unauthorized usage of this tool without permission may violate local, state, or federal laws.  
+The developer assumes **no responsibility** for any misuse or damages.
+
+---
+
+## ⭐️ Show Some ❤️
+
+If you like this project, feel free to **star** it and **share** it!  
+Contributions are welcome — feel free to submit a Pull Request!
+
+---
+
+# 📦 Final Notes
+
+✅ Fast and simple installation  
+✅ Free APIs — no hidden fees  
+✅ Designed for pentesters and cybersecurity students  
+✅ Works on almost all Linux distributions!
+
