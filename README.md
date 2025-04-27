@@ -58,7 +58,9 @@ Then:
 - Open the script:
 
   ```bash
-  nano traceroutex.sh
+  nano main.sh
+  or
+  gedit main.sh
   ```
 
 - Find the line:
@@ -83,7 +85,7 @@ Then:
 
 ```bash
 # Run the script
-./traceroutex.sh
+./main.sh
 ```
 
 You will see a menu:
@@ -104,7 +106,7 @@ You will see a menu:
 ```
 
 - `[1]` Track any IP address worldwide.
-- `[2]` Trace any phone number (e.g., `+14151234567`).
+- `[2]` Trace any phone number (e.g., `14151234567`). not use + in country code 
 - `[3]` Exit the tool safely.
 
 ---
